@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: crm-service
+  data:
+    mongodb:
+      uri: mongodb://user:password@localhost:27017/crmdb
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
